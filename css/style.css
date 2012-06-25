@@ -1,0 +1,641 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, button
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border: none;
+    list-style: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #3274c4;
+}
+
+@font-face {
+    font-family: "Arial Narrow";
+    src: url(../fonts/arialnar-webfont.eot);
+}
+
+@font-face {
+    font-family: "Arial Narrow";
+    src: url(../fonts/arialnar-webfont.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro Medium Condensed";
+    src: url(../fonts/helveticaneueltpro-mdcn-webfont.eot);
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro Medium Condensed";
+    src: url(../fonts/helveticaneueltpro-mdcn-webfont.ttf);
+}
+
+button::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+
+button {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    width: auto;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+body, input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #1f1f1f;
+    line-height: 18px;
+}
+
+body.splash {
+    background: #f9f9f9 url(../images/bg-logo.png) no-repeat;
+    background-position: center 60px;
+}
+
+.button {
+    display: block;
+    padding: 0 42px 0 0;
+    height: 39px;
+    background: url(../images/button-right.png) no-repeat;
+    background-position: right top;
+    border: none;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-position: right -39px;
+}
+
+.button:hover span,
+.button:hover div {
+    background-position: left -39px;
+}
+
+.button span,
+.button div {
+    display: block;
+    padding: 0 0 0 37px;
+    height: 39px;
+    line-height: 37px;
+    background: url(../images/button-left.png) no-repeat;
+    font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    border: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+input {
+    width: 219px;
+    padding: 0 5px;
+    height: 26px;
+    line-height: 26px;
+    background: url(../images/input.png) no-repeat;
+}
+
+#wrapper {
+    background: url(../images/bg.png) repeat-x;
+    background-position: left 181px;
+}
+
+body.splash #wrapper {
+    background-position: left 329px;
+}
+
+#main {
+    width: 962px;
+    margin: 0 auto;
+}
+
+#top {
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+
+#top #logo,
+#top #logo a {
+    background: url(../images/logo.png) no-repeat;
+    display: block;
+    width: 184px;
+    height: 56px;
+    text-indent: -1000em;
+    float: left;
+    margin: 38px 0 0 11px;
+}
+
+#top #logo a {
+    margin: 0;
+}
+
+#top ul.menu {
+    float: right;
+    overflow: hidden;
+    margin: 47px 0 0;
+}
+
+#top ul.menu li {
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+#top ul.menu li a {
+    display: block;
+    width: 127px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666666;
+    font-size: 17px;
+    font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+#top ul.menu li.selected a {
+    background: url(../images/menu-hover.png) no-repeat;
+}
+
+#top ul.menu li a:hover,
+#top ul.menu li.selected a:hover{
+    color: #003d71;
+    background: url(../images/menu-hover.png) no-repeat;
+}
+
+#portfolio {
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio ul.shots,
+#portfolio ul.shots li,
+#portfolio ul.shots li a,
+#portfolio div.mask,
+#portfolio ul.shots li img {
+    display: block;
+    position: relative;
+    width: 962px;
+    height: 301px;
+    text-indent: -1000em;
+}
+
+#portfolio div.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#portfolio ul.shots li {
+    float: left;
+}
+
+#portfolio div.mask {
+    background: url(../images/portfolio-mask.png) no-repeat;
+    z-index: 2;
+}
+
+#portfolio #marquee {
+    width: 800px;
+    height: 79px;
+    overflow: hidden;
+    float: left;
+}
+
+#portfolio ul.marquee {
+    height: 79px;
+}
+
+#portfolio ul.marquee li {
+    width: 730px;
+    float: left;
+    color: #f9f9f9;
+    height: 36px;
+    padding: 22px 17px 21px 53px;
+    background: url(../images/marquee.png) no-repeat;
+    background-position: 16px center;
+}
+
+#portfolio ul.slider {
+    width: 142px;
+    height: 27px;
+    padding: 26px 0 26px 20px;
+    float: left;
+}
+
+#portfolio ul.slider li {
+    width: 20px;
+    height: 27px;
+    background: url(../images/marquee-dot.png) no-repeat;
+    background-position: center;
+    text-indent: -1000em;
+    float: left;
+    cursor: pointer;
+}
+
+#portfolio ul.slider li.selected {
+    background: url(../images/marquee-dot-hover.png) no-repeat;
+    background-position: center;
+}
+
+#portfolio ul.slider li.left,
+#portfolio ul.slider li.right {
+    width: 26px;
+    height: 27px;
+}
+
+#portfolio ul.slider li.left {
+    background: url(../images/marquee-left.png) no-repeat;
+    margin: 0 10px 0 0;
+}
+
+#portfolio ul.slider li.right {
+    background: url(../images/marquee-right.png) no-repeat;
+    margin: 0 0 0 10px;
+}
+
+#portfolio ul.slider li.left:hover,
+#portfolio ul.slider li.right:hover {
+    background-position: left -27px;
+}
+
+#content {
+    width: 962px;
+    padding: 11px 0 0 0;
+    background: url(../images/content-top.png) no-repeat;
+}
+
+#content div.content {
+    width: 962px;
+    padding: 0 0 12px 0;
+    background: url(../images/content-bottom.png) no-repeat;
+    background-position: left bottom;
+}
+
+#content div.content div.body {
+    background: url(../images/content-bg.png) repeat-y;
+    padding: 19px 0 13px 20px;
+    overflow: hidden;
+}
+
+#content div.column-left {
+    width: 440px;
+    float: left;
+    padding: 0 10px 0 0;
+    margin: 0 20px 0 0;
+}
+
+#content div.column-right {
+    width: 450px;
+    padding: 0 0 0 22px;
+    float: left;
+}
+
+#content h2 {
+    color: #003d71;
+    margin: -1px 22px 9px 0;
+    line-height: normal;
+    background: url(../images/h2.png) repeat-x;
+    background-position: left 28px;
+}
+
+#content h2 span {
+    background: #e5ecf6;
+    font-size: 30px;
+    font-family: "Helvetica Neue LT Pro Medium Condensed", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0 20px 0 0;
+}
+
+#content h3 {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 0 7px 0;
+}
+
+#content p {
+    margin: 0 0 19px 0;
+}
+
+#content p img {
+    margin: 13px 0 14px;
+}
+
+#content div.column-right {
+    margin: -11px 0 0 0;
+}
+
+#content div.column-right h4 a {
+    color: #7a7a7a;
+    font-familt: "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#content ul.slogans li {
+    border-bottom: solid 1px #d0d6df;
+    background-position: 6px 21px;
+    background-repeat: no-repeat;
+}
+
+#content ul.slogans li div {
+    padding: 29px 90px 15px 44px;
+    background: url(../images/slogans.png) no-repeat;
+    background-position: 384px 10px;
+    cursor: pointer;
+}
+
+#content ul.slogans li:hover div {
+    background-image: url(../images/slogans-hover.png);
+}
+
+#content ul.slogans li.fast {
+    background-image: url(../images/slogans-fast.png);
+}
+
+#content ul.slogans li.fast div {
+    background-position: 384px 42px;
+}
+
+#content ul.slogans li.solid {
+    background-image: url(../images/slogans-solid.png);
+}
+
+#content ul.slogans li.solid div {
+    background-position: 384px 33px;
+}
+
+#content ul.slogans li.passion {
+    background-image: url(../images/slogans-passion.png);
+    border: none;
+}
+
+#content ul.slogans li.passion div {
+    background-position: 384px 49px;
+}
+
+#content ul.slogans li h4 {
+    margin: 0 0 13px;
+}
+
+#content ul.slogans li p {
+    margin: 0;
+}
+
+#content #flashprojects {
+    margin: -138px 0 0 0;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+}
+
+#content div.center {
+    margin: 0 185px 0 318px;
+}
+
+#content ul.browsers {
+    overflow: hidden;
+    margin: 26px 0 29px 0;
+}
+
+#content ul.browsers li {
+    float: left;
+    width: 35px;
+    height: 35px;
+    text-indent: -1000em;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 15px 0 0;
+}
+
+#content ul.browsers li.chrome {
+    background-image: url(../images/b-chrome.png);
+}
+
+#content ul.browsers li.safari {
+    background-image: url(../images/b-safari.png);
+}
+
+#content ul.browsers li.opera {
+    background-image: url(../images/b-opera.png);
+}
+
+#content ul.browsers li.ie {
+    background-image: url(../images/b-ie.png);
+}
+
+#content ul.browsers li.firefox {
+    background-image: url(../images/b-firefox.png);
+}
+
+#content ul.recomendations {
+    margin: 34px -5px;
+}
+
+#content ul.recomendations a:hover,
+#content p a:hover {
+    text-decoration: underline;
+}
+
+#content ul.recomendations li {
+    overflow: hidden;
+    float: left;
+    width: 440px;
+    margin: 0 37px 47px 0;
+}
+
+#content ul.recomendations li.rightone {
+    margin: 0;
+}
+
+#content ul.recomendations li img.reco,
+#content img.map {
+    max-width: 110px;
+    height: 156px;
+    float: left;
+    padding: 5px;
+    background: #f9f9f9;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 15px 0 0;
+}
+
+#content ul.recomendations li > div {
+    overflow: hidden;
+}
+
+#content ul.recomendations li div.reco-logo {
+    height: 49px;
+    overflow: hidden;
+}
+
+#content #map {
+    width: 430px;
+    height: 312px;
+    max-width: none;
+    margin: 0;
+}
+
+#content div.contact div.column-left {
+    padding: 24px 10px 0 0;
+}
+
+#content div.contact div.column-right {
+    padding: 65px 12px 0 0;
+}
+
+#content #message {
+    width: 379px;
+    height: 166px;
+    padding: 5px;
+    background: url(../images/message.png) no-repeat;
+    border: none;
+}
+
+#content div.contact div.fieldset {
+    padding: 28px 32px 0 29px;
+    background: url(../images/contact.png) no-repeat;
+    height: 507px;
+}
+
+#content dl {
+    padding: 0 0 15px 0;
+}
+
+#content dt {
+    margin: 0 0 6px;
+}
+
+#content dd {
+    margin: 0 0 10px;
+}
+
+#content div.contact div.select,
+#content div.contact div.select span {
+    width: 389px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    position: relative;
+}
+
+#content div.contact div.select span {
+    padding: 0 31px 0 5px;
+    background: url(../images/select.png) no-repeat;
+}
+
+#content div.contact div.select select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 389px;
+    height: 26px;
+    opacity: 0;
+    fitler: alpha(opacity=0);
+    background: #ffffff;
+}
+
+#content div.contact .button {
+    padding: 0 28px 0 0;
+    *width: 191px;
+}
+
+#content div.contact .button div {
+    padding: 0 0 0 30px;
+    *width: 131px;
+}
+
+#aside {
+    overflow: hidden;
+    padding: 37px 0 0 10px;
+}
+
+#aside a.button {
+    float: right;
+    margin: -3px 0 0 0;
+}
+
+#aside h2 {
+    color: #023f72;
+    font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0 0 7px;
+}
+
+#footer {
+    background: #e7e7e7 url(../images/footer.png) repeat-x;
+    background-position: left top;
+    margin: 55px 0 0 0;
+    padding: 0 0 58px 0;
+}
+
+#footer div {
+    width: 962px;
+    margin: 0 auto;
+}
+
+#footer div a.starfactory {
+    float: right;
+    display: block;
+    width: 72px;
+    height: 15px;
+    text-indent: -1000em;
+    overflow: hidden;
+    background: url(../images/starfactory.png) no-repeat;
+    margin: 24px -2px 0 0;
+}
+
+#footer div ul {
+    padding: 22px 0 7px;
+    margin: 0 0 0 -4px;
+}
+
+#footer div ul li {
+    display: inline;
+    color: #c8c8c8;
+}
+
+#footer div ul li:before {
+    content: " | ";
+}
+
+#footer div ul li:first-child:before {
+    content: "";
+}
+
+#footer div ul li a {
+    color: #3274c4;
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+#footer div ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer div address {
+    font-style: normal;
+    font-size: 12px;
+    color: #323232;
+}

@@ -1,0 +1,101 @@
+<!-- Note: this line is a XML comment block -->
+
+<coverFlow>
+	
+	<!-- SETTINGS -->
+	<settings>
+		
+		<!-- component width and height in pixels -->
+		<width>590</width>
+		<height>300</height>
+		
+		<!-- Item width and height in pixels -->
+		<itemWidth>198</itemWidth>
+		<itemHeight>159</itemHeight>
+		
+		<!-- Side items x, y and z rotation angle -->
+		<yAngle>60</yAngle>
+		<xAngle>0</xAngle>
+		<zAngle>0</zAngle>
+		
+		<!-- Maximum z depth -->
+		<maxZDepth>400</maxZDepth>
+		
+		<!-- Z depth between middle item and side items -->
+		<zDepthOffset>200</zDepthOffset>
+		
+		<!-- Items x spacing -->
+		<xSpacing>90</xSpacing>
+		
+		<!-- Side items x distance from center -->
+		<distFromCenter>150</distFromCenter>
+		
+		<!-- Flow movement time and easing -->
+		<moveTime>0.4</moveTime>  <!-- in seconds -->
+		<moveEasing>easeOutQuad</moveEasing> <!-- http://hosted.zeh.com.br/tweener/docs/en-us/misc/transitions.html -->
+		
+		<!-- Setup dropshadow alpha, distance and qulity, if enabled -->
+		<dropShadow>true</dropShadow>
+		<dropShadowAlpha>0.3</dropShadowAlpha>
+		<dropShadowSpread>16</dropShadowSpread>
+		<dropShadowQuality>2</dropShadowQuality>
+		
+		<!-- Set initial x and y titlt angle -->
+		<initTiltXAngle>-5</initTiltXAngle>
+		<initTiltYAngle>0</initTiltYAngle>
+		
+		<!-- Distance from camera view point -->
+		<centerXOffset>0</centerXOffset>
+		<centerYOffset>0</centerYOffset>
+		
+		<!-- Setup mouse move tilt maximum x and y angles, tilt time and easing, if enabled -->
+		<enableTilt>false</enableTilt>
+		<tiltYAngle>15</tiltYAngle>
+		<tiltXAngle>-15</tiltXAngle>
+		<tiltTime>0.3</tiltTime> <!-- in seconds -->
+		<tiltEasing>easeOutQuad</tiltEasing> <!-- http://hosted.zeh.com.br/tweener/docs/en-us/misc/transitions.html -->
+		
+		<!-- Set description y pos from the top of the component -->
+		<descriptionY>-120</descriptionY>
+		
+		<!-- Setup items reflection height, alpha and distance, if enabled -->
+		<showReflection>true</showReflection>
+		<reflHeight>30</reflHeight>
+		<reflAlpha>0.1</reflAlpha>
+		<reflDist>0</reflDist>
+		
+		<!-- Setup scrollbar width, y position and button width, id enabled -->
+		<showScrollbar>false</showScrollbar>
+		<scrollbarWidth>360</scrollbarWidth>
+		<scrollButtonWidth>80</scrollButtonWidth>
+		<scrollbarY>263</scrollbarY>
+		
+		<!-- Setup items auto-flow delay, direction, type and mouse over action, if enabled -->
+		<autoFlow>true</autoFlow>
+		<autoFlowDelay>2.5</autoFlowDelay> <!-- in seconds -->
+		<autoFlowDir>RIGHT_TO_LEFT</autoFlowDir> <!-- RIGHT_TO_LEFT or LEFT_TO_RIGHT -->
+		<autoFlowType>INVERTED</autoFlowType> <!-- INVERTED or CIRCULAR -->
+		<pauseOnRollOver>true</pauseOnRollOver>
+		
+	</settings>
+	
+	<!-- ITEMS -->
+	<items>	
+		
+		<!-- Specify external item path, link and link target -->
+		
+		<item src="flash/images/01.png" link="http://www.google.com" target="_blank"><![CDATA[INK Box logo 1]]></item>
+		<item src="flash/images/02.png" link="http://www.google.com" target="_blank"><![CDATA[INK Box logo 2]]></item>
+		<item src="flash/images/03.png" link="http://www.google.com" target="_blank"><![CDATA[INK Box logo 3]]></item>
+		<item src="flash/images/04.png" link="http://www.google.com" target="_blank"><![CDATA[INK Box logo 4]]></item>
+		<item src="flash/images/05.png" link="http://www.google.com" target="_blank" initial="true"><![CDATA[Universities <i>longer</i> <b>text</b> here, HTML formatted]]></item>
+		<item src="flash/images/06.png" link="http://www.google.com" target="_blank"><![CDATA[Sold Crazy Logo]]></item>
+		<item src="flash/images/07.png" link="http://www.google.com" target="_blank"><![CDATA[FWD Digital]]></item>
+		<item src="flash/images/08.png" link="http://www.google.com" target="_blank"><![CDATA[Forward Digital 2]]></item>
+		<item src="flash/images/09.png" link="http://www.google.com" target="_blank"><![CDATA[Vocanet LOGO]]></item>
+		
+		<!-- Add more or delete items, or modifiy the existing ones -->
+		
+	</items>
+	
+</coverFlow>

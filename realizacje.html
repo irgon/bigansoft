@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Author" content="Igor Rzegocki" />
+    <meta name="Copyright" content="Copyright (c) 2010 Igor Rzegocki" />
+
+    <meta name="Robots" content="index, follow" />
+    <meta name="Revisit-after" content="7 days" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="css/style.css" media="screen" rel="Stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bigansoft.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div id="top">
+                <div id="logo"><a href="">BiGanSoft - bigansoft.pl</a></div>
+                <ul class="menu">
+                    <li class="selected"><a href="">Realizacje</a></li>
+                    <li><a href="">Referencje</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div class="content">
+                    <div class="body">
+                        <h2><span>Realizacje</span></h2>
+                        <div id="flashprojects"><div id="flashcontent"></div></div>
+                        <script type="text/javascript" src="js/swfobject.js"></script>
+                        <script type="text/javascript">
+                                var flashvars = {};
+                                var params = {};
+                                var attributes = {};
+                                
+                                attributes.id = "oxylusflash";
+                                
+                                params.allowFullScreen = "false";
+                                params.allowScriptAccess = "always";
+                                params.base = "";
+                                params.wmode = "transparent";
+                                params.bgColor = "transparent";
+                                
+                                // Specify xml file here
+                                flashvars.xmlFile = "flash/data.xml";
+                                
+                                swfobject.embedSWF("flash/main.swf", "flashcontent", "942", "450", "10.0.0", "js/expressInstall.swf", flashvars, params, attributes);
+                        </script>
+                        <div class="center">
+                            <h3>Nazwa projektu</h3>
+                            <p>dapibus. Sed vel ligula justo, vitae mattis libero. Fusce cursus pulvinar orci,
+                            at ultrices magna facilisis ac. Etiam a hendrerit ante.Nunc aliquam volutpat dapibus. Sed vel ligula justo, vitae mattis libero.</p>
+                            <ul class="browsers">
+                                <li class="chrome" title="Google Chrome">Google Chrome</li>
+                                <li class="safari" title="Apple Safari">Apple Safari</li>
+                                <li class="opera" title="Opera">Opera</li>
+                                <li class="ie" title="Internet Explorer">Internet Explorer</li>
+                                <li class="firefox" title="Mozilla Firefox">Mozilla Firefox</li>
+                            </ul>
+                            <h3>Technologie</h3>
+                            <p>.NET, PHP, AJAX, JS, XHTML, CSS</p>
+                            <h3>Wersja online:</h3>
+                            <p><a href="">www.mojlinkdostrony.pl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="aside">
+                <a class="button" href=""><span>Zobacz realizacje</span></a>
+                <h2>Maecenas iaculis mattis arcu a pellentesque.</h2>
+                <p>Fusce cursus pulvinar orci, at ultrices magna facilisis ac. Etiam a hendrerit ante.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <a class="starfactory" href="">StarFactory*</a>
+                <ul>
+                    <li><a href="">Realizacje</a></li>
+                    <li><a href="">Referencje</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+                <address>&#169; 2010 - BiganSoft.pl</address>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
